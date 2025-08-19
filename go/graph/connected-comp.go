@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func dfs3(curr int, g map[int][]int, v map[int]int, c *[]int) bool {
 	v[curr] = 1
 	*c = append(*c, curr)
@@ -41,8 +39,4 @@ func countComponents(n int, edges [][]int) int {
 	}
 
 	return res
-}
-
-func main() {
-	fmt.Println(countComponents(6, [][]int{{0, 1}, {1, 2}, {2, 3}, {4, 5}}))
 }
