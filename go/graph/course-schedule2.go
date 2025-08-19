@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func dfs2(curr int, v map[int]int, g map[int][]int, r *[]int) bool {
 	if v[curr] == 1 {
 		return false
@@ -44,8 +42,4 @@ func findOrder(numCourses int, prereqs [][]int) []int {
 		}
 	}
 	return res
-}
-
-func main() {
-	fmt.Println(findOrder(3, [][]int{{1, 0}}))
 }
