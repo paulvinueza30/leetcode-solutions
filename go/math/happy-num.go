@@ -33,7 +33,6 @@ func isHappy(n int) bool {
 		slow = getSquareSum(slow)
 		fast = getSquareSum(fast)
 		fast = getSquareSum(fast)
-		n = slow
 	}
 	return fast == 1
 }
