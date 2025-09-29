@@ -19,14 +19,13 @@ func minMeetingRooms(intervals []interval) int {
 
 	for sp < len(start){
 		if start[sp] < end[ep] {
-			count += 1
-			res = max(res , count)
+			count++
 			sp++
+			res = max(res , count)
 		} else{
 			count--
 			ep++
 		}
-
 	}
-		
+	return res
 }
