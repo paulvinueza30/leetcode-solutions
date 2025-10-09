@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // exponential solution
 // func change(amount int, coins []int) int {
 // 	var dfs func(i int, curr int) int
@@ -53,8 +51,4 @@ func change2(amount int, coins []int) int {
 		dp = nextDP
 	}
 	return dp[amount]
-}
-
-func main(){
-	fmt.Println(change2(4, []int{1,2,3}))
 }
