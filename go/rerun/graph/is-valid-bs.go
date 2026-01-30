@@ -1,11 +1,5 @@
 package graph
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func isValidBST(root *TreeNode) bool {
 	valid := func(treeMin, curr, treeMax int) bool {
 		if curr > treeMin && curr < treeMax {
